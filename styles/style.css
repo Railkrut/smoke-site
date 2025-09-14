@@ -1,0 +1,958 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../assets/fonts/MuseoSansCyrl-500.ttf');
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: url('../assets/fonts/ofont.ru_Candara.ttf');
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../assets/fonts/MuseoSansCyrl-700.ttf');
+    font-weight: bold;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Museo', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+.top-background {
+    background-image: url("../assets/images/left-smoke.png");
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    min-height: 1883px;
+    width: 100%
+}
+
+.header {
+    padding: 33px 0;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.header-list-item {
+    font-size: 14px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    gap: 65px;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.header-connection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
+
+.header-address {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-address-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-address-text {
+    font-size: 14px;
+}
+
+.header-connection-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-schedule-new {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header__burger {
+    display: none;
+}
+
+.menu__close {
+    display: none;
+}
+
+.main {
+    position: relative;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+}
+
+.main-info-title {
+    font-size: 55px;
+    font-family: 'Candara', sans-serif;
+    line-height: 1.091;
+    max-width: 488px;
+}
+
+.main-info-subtitle {
+    margin: 50px 0;
+    font-size: 16px;
+}
+
+.blue-text {
+    color: #78eaff;
+    text-shadow: 0 0 5px #78eaff;
+}
+
+.main-info-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-info-actions.adaptive {
+    display: none;
+}
+
+.btn {
+    position: relative;
+    z-index: 4;
+    padding: 20px 0;
+    width: 215px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(120, 234, 255);
+    font-size: 14px;
+    color: #141414;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.blue-btn {
+    box-shadow: 0 0 5px #78eaff;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px #78eaff;
+}
+
+.transparent-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: .5s ease;
+}
+
+.transparent-btn:hover {
+    border-color: #78eaff;
+}
+
+.main-image {
+    position: relative;
+    height: 543px;
+}
+
+.main-img {
+    position: absolute;
+    top: -79px;
+}
+
+.advantages .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 740px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: "Candara", sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.advantages-title {
+    position: absolute;
+    top: 43px;
+}
+
+.advantages-items {
+}
+
+.advantages-background-items {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    top: 0;
+}
+
+.advantages-item {
+    position: absolute;
+    font-size: 15px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    z-index: 3;
+}
+
+.advantages-item.first {
+    top: 240px;
+    left: -85px;
+    width: 209px;
+}
+
+.advantages-item.second {
+    top: 252px;
+    right: -65px;
+    width: 182px;
+}
+
+.advantages-item.third {
+    top: 456px;
+    left: -80px;
+    width: 234px;
+}
+
+.advantages-item.fourth {
+    top: 463px;
+    right: -50px;
+    width: 201px;
+}
+
+.advantages-item.fifth {
+    top: 585px;
+    right: 244px;
+    width: 201px;
+}
+
+.atmosphere {
+    position: relative;
+}
+
+.atmosphere-title {
+    margin-top: 92px;
+}
+
+.atmosphere-video {
+    position: relative;
+}
+
+.atmosphere-video-items {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.atmosphere-item {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    min-height: 600px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 3, 19, 0.2);
+    pointer-events: none
+}
+
+.slick-dots li.slick-active button:before {
+    color: #78eaff;
+}
+
+.slick-dots li button:before {
+    color: white;
+    opacity: 1;
+}
+
+.slick-prev {
+    background-image: url('../assets/images/prev-1.png');
+    left: 20px;
+    z-index: 3;
+}
+
+.slick-next {
+    background-image: url('../assets/images/next-1.png');
+    right: 20px;
+    z-index: 3;
+}
+
+.slick-prev, .slick-next {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: calc(50% + 20px);
+    transition: .5s ease;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    content: "";
+}
+
+/* Убираем hover-эффекты */
+.slick-prev:hover,
+.slick-next:hover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1 !important;
+}
+
+.slick-prev:hover {
+    background-image: url('../assets/images/prev-hover.png') !important;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.slick-next:hover {
+    background-image: url('../assets/images/next-hover.png') !important;
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+    outline: none !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slick-next:focus {
+    background-image: url('../assets/images/next-hover.png') !important;
+}
+
+.slick-prev:focus {
+    background-image: url('../assets/images/prev-hover.png') !important;
+}
+
+.menu {
+    overflow: hidden;
+}
+
+.menu-title {
+    margin-top: 173px;
+}
+
+.menu-items {
+    position: relative;
+    z-index: 3;
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+    width: 535px;
+    height: 645px;
+    background-image: url("../assets/images/menu-image.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 55px 50px;
+    box-sizing: border-box;
+}
+
+.menu-items-title {
+    font-size: 35px;
+    font-family: "Candara", sans-serif;
+    color: rgb(120, 234, 255);
+    text-shadow: 0 0 5px #78eaff;
+}
+
+.menu-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 29px;
+    width: 287px;
+}
+
+.menu-item {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+
+.menu-item-amount {
+    font-size: 24px;
+    font-family: "Candara", sans-serif;
+    color: rgb(120, 234, 255);
+    text-shadow: 0 0 5px #78eaff;
+    margin-bottom: 11px;
+}
+
+.menu-item-ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    list-style: none;
+}
+
+.menu-item-ingredient {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.halls {
+    position: relative;
+}
+
+.halls-title {
+    margin-top: 207px;
+    margin-bottom: 80px;
+}
+
+.halls-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 243px;
+    row-gap: 70px;
+}
+
+.halls-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.halls-item-left {
+    max-width: 270px;
+}
+
+.halls-item-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: "Candara", sans-serif;
+    color: rgb(120, 234, 255);
+}
+
+.halls-item-description {
+    min-height: 121px;
+    font-size: 15px;
+    font-family: "Museo", sans-serif;
+    color: rgb(234, 234, 234);
+    line-height: 1.4;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.reservation-title {
+    margin-top: 227px;
+}
+
+.reservation-description {
+    margin: 40px 0;
+    font-size: 18px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-align: center;
+    max-width: 414px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    gap: 20px;
+}
+
+.form-input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.form-btn {
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: #969696;
+}
+
+.reviews-title {
+    margin: 200px 0 70px 0;
+}
+
+.reviews {
+    overflow: hidden;
+}
+
+.reviews-items {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.reviews-item {
+    padding: 40px;
+    background-color: #141c2c;
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+
+.reviews-reviewer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.reviewer-name {
+    font-size: 20px;
+    font-family: "Candara", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.reviewer-status {
+    font-size: 15px;
+    font-family: "Museo", sans-serif;
+    color: rgb(120, 234, 255);
+    line-height: 1.4;
+}
+
+.reviews-item-description {
+    min-height: 150px;
+    font-size: 15px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    margin-top: 13px;
+}
+
+.reviews .slick-prev {
+    left: -147px;
+}
+
+.reviews .slick-next {
+    right: -147px;
+}
+
+.footer {
+    padding: 220px 0 50px 0;
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-center {
+    margin-left: 291px;
+}
+
+.footer-right {
+    margin-left: 213px;
+}
+
+.footer-rights {
+    margin: 26px 0 40px 0;
+    font-size: 14px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link-img {
+    fill: #78eaff;
+    transition: .5s ease;
+}
+
+.footer-link-img:hover {
+    filter: drop-shadow(0 0 1px #b5f3fd);
+    opacity: .9;
+}
+
+.footer-title {
+    font-size: 15px;
+    font-family: "Museo", sans-serif;
+    color: rgb(120, 234, 255);
+    text-shadow: 0 0 5px #78eaff;
+    margin-bottom: 29px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-item-link {
+    font-size: 14px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer-item {
+    font-size: 14px;
+    font-family: "Museo", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.footer-background {
+    position: absolute;
+    bottom: 0;
+    overflow: visible;
+    width: 100%;
+    z-index: -1;
+}
+
+#menu {
+    display: none;
+}
+
+.smoke-bg {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    top: 430px;
+    left: 0;
+    width: 100%
+}
+
+.smoke-blur-bg {
+    position: absolute;
+    z-index: 0;
+}
+
+.leaf-bg {
+    position: absolute;
+    z-index: -1;
+    bottom: -64px;
+    right: -115px;
+}
+
+.halls-bg {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    z-index: -3;
+}
+
+.halls-smoke-bg {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    z-index: -2;
+}
+
+.smoke-right-bg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 350px;
+}
+
+.rings-bg {
+    position: absolute;
+    z-index: -1;
+    left: 90px;
+    bottom: -220px;
+}
+
+.header__burger {
+    display: none;
+}
+
+.menu__close {
+    display: none;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+.success__message {
+    display: none;
+    position: relative;
+    z-index: 4;
+    height: 400px;
+    font-size: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hvr-sweep-to-top:before {
+    border-radius: 5px;
+}
+
+.form-select {
+    width: 100%;
+    background-color: transparent !important;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Museo", sans-serif;
+    position: relative;
+    user-select: none;
+}
+
+.select-item.required {
+    pointer-events: none;
+    border-color: #969696;
+    color:  #969696;
+}
+
+.select-item.required:hover {
+    background-color: transparent;
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #ff9800 !important;
+}
+
+.form-select.is-active .select-body {
+    display: grid;
+}
+
+.select-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.select-current {
+    font-family: "Museo", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #969696;
+}
+
+.select-body {
+    z-index: 10;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    top: 100%;
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 16px;
+    padding: 20px;
+}
+
+.select-item {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 130%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #424242;
+    color: #141c2c;
+    text-align: center;
+}
+
+.select-item.is-chosen {
+    background-color: #78eaff;
+}
+
+.select-item.is-chosen:hover {
+    background-color: #78eaff;
+}
+
+.select-icon {
+    transition: .5s ease;
+}
+
+.select-item:hover {
+    background-color: #d3f8ff;
+}
+
+.popup .container {
+    padding: 0 15px
+}
+
+.popup {
+    background-image: url("../assets/images/smoke-popup.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 420px;
+    display: none;
+    justify-self: center;
+    align-self: center;
+    z-index: 100000000000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 0;
+}
+
+.popup-title {
+    margin-top: 0 !important;
+    margin-bottom: 36px;
+    max-width: 300px;
+}
+
+.popup-info {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.popup-description {
+    margin-top: 36px;
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
